@@ -9,11 +9,14 @@ body {
 header {
     height: 493px;
     overflow-x: hidden;
+    font-family: 'Cabin', sans-serif;
+
 }
 
 .first-content {
     height: 130px;
     background-color: rgb(0, 104, 240);
+
 }
 
 
@@ -22,12 +25,14 @@ header {
     position: relative;
     left: 20%;
     top: 27%;
+
 }
 
 .container-buscador {
     position: relative;
     left: 33%;
     bottom: 24px;
+
 }
 
 .buscador {
@@ -67,14 +72,14 @@ header {
     border: solid;
     border-color: grey;
     padding: 1px;
+
 }
 
 .body-text {
     color: white;
     font-size: 15px;
-    font-family: 'Cabin', sans-serif;
     margin-left: 20px;
-;
+
 }
 
 .banner-carrinho {
@@ -91,7 +96,6 @@ header {
     position: relative;
     left: 230px;
     bottom: 50px;
-    font-family: 'Cabin', sans-serif;
  
 }
 
@@ -99,7 +103,6 @@ header {
     color: white;
     text-decoration: none;
     
-
 }
 
 .hiper-link:hover {
@@ -109,6 +112,7 @@ header {
 
 nav {
     background-color: rgb(53, 52, 52);
+
 }
 
 .menu-header {
@@ -118,8 +122,6 @@ nav {
     
 }
     
-
-
 .menu-li {
     margin-left: 80px;
     color: white;
@@ -150,6 +152,8 @@ main {
     position: relative;
     left: 18%;
     bottom: 41px;
+    font-family: 'Cabin', sans-serif;
+
 }
 
 .tech-promoção {
@@ -159,7 +163,6 @@ main {
     padding-left: 55px;
     font-size: 22px;
     margin: 0;
-    font-family: 'Cabin', sans-serif;
     text-transform: uppercase;
     
 }
@@ -169,10 +172,11 @@ main {
 
 }
 
-.container-promoção {
+.first-container {
     background-color: whitesmoke;
-    height: 480px;
+    height: 741px;
     padding-top: 35px;
+    overflow: hidden;
 }
 
 .container-promoção-produtos {
@@ -187,21 +191,21 @@ main {
     background-color: white;
     margin-left: 2.5%;
     border-radius: 5px;
+    cursor: pointer;
     
 }
 
 .produto-selected:hover {
     box-shadow: 0px 10px 13px -7px #000000;
 
-    
 }
 
 .display-top {
     display: flex;
+
 }
 
 .discount-amount {
-    font-family: 'Cabin', sans-serif;
     background-color: orange;
     color: white;
     width: 40px;
@@ -212,14 +216,15 @@ main {
     border-radius: 5px;
     margin-left: 7px;
     margin-top: 7px;
+
 }
 
 .qnt-produto-span {
     font-weight: bold;
+    
 }
 
 .qnt-produto {
-    font-family: 'Cabin', sans-serif;
     background-color: white;
     color: orange;
     width: 40px;
@@ -235,13 +240,12 @@ main {
 
 }
 
-
-
 .ul-stars {
     display: flex;
     position: relative;
     left: 15%;
     top: 9px;
+
 }
 
 .imagens-promo {
@@ -249,43 +253,41 @@ main {
     position: relative;
     left: 21%;
     top: 22px;
+
 }
 
 .condições-produto{
     position: relative;
     top: 40px;
     padding: 0 13px;
+
 }
 
-
-
 .descrição-do-produto {
-    font-family: 'Cabin', sans-serif;
     font-size: 14px;
     font-weight: bold;
     
-
 }
 
 .price-strike {
     font-size: 12px;
-    font-family: 'Cabin', sans-serif;
     margin: 10px 0px;
     opacity: 55%;
+
 }
 
 .price-discount {
     color: orange;
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Cabin', sans-serif;
+
 }
 
 .condição-pix {
-    font-family: 'Cabin', sans-serif;
     padding-top: 5px;
     font-size: 12px;
     opacity: 60%;
+
 }
 
 .comprar-h {
@@ -295,7 +297,6 @@ main {
     border-radius: 5px;
     height: 39px;
 
-    
 }
 
 .produto-selected:hover .comprar-h {
@@ -306,6 +307,7 @@ main {
     border-radius: 5px;
     height: 39px;
     cursor: pointer;
+
 }
 
 .comprar-ul {
@@ -314,6 +316,7 @@ main {
     color: white;
     position: relative;
     right: 40px;
+
 }
 
 .text-comprar {
@@ -322,4 +325,91 @@ main {
     padding-top: 10px;
     
 }
+
+.text-link {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left: 69%;
+    top: 5%;
+    text-decoration: none;
+
+}
+
+.text-link:hover {
+    text-decoration: underline;
+
+}
+
+.banner-app {
+    position: relative;
+    top: 75px;
+
+}
+
+.second-container {
+    height: 870px;
+    background-color: whitesmoke;
+
+}
+
+.container-produtos {
+    height: 220px;
+    padding-top: 70px;
+    display: flex;
+
+}
+
+.display-produtos {
+    background-color: white;
+    width: 250px;
+    height: 220px;
+    margin-left: 2.5%;
+    padding-right: 14px;
+    border-radius: 5px;
+    border: none;
+    border-width: 2px;
+    border-color: #0f446e;
+    cursor: pointer;
+
+}
+
+.display-produtos:hover {
+    box-shadow: 0px 2px 21px -7px #000000;
+
+}
+
+.product-list {
+    text-align: center;
+    
+}
+
+.poduct-list-li {
+    padding: 16px;
+    color: #0f446e;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.display-produtos-img {
+    width: 60%;
+}
+
+.display-produtos-img2 {
+    width: 74%; 
+    margin-top: 3px;
+    margin-left: 16px;
+
+}
+
+.display-produtos-img3 {
+    width: 84%;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
 
