@@ -3,11 +3,13 @@
 body {
     font-family: 'Cabin', sans-serif;
     background-color: white;
+    margin-bottom: 0;
 
 }
 
+/* HEADER */
+
 header {
-    height: 493px;
     overflow-x: hidden;
     font-family: 'Cabin', sans-serif;
 
@@ -102,12 +104,17 @@ header {
 .hiper-link {
     color: white;
     text-decoration: none;
+    font-family: 'Cabin', sans-serif;
     
 }
 
 .hiper-link:hover {
     text-decoration: underline;
     
+}
+
+.hiper-link-banner1 {
+    margin-bottom: 20px;
 }
 
 nav {
@@ -135,9 +142,15 @@ nav {
     
 }
 
+.second-content {
+    max-height: 322px;
+    overflow: hidden;
+}
+
 .main-banner {
     position: relative;
     left: 18%;
+    
     
 }
 
@@ -146,13 +159,12 @@ nav {
 
 
 main {
-    width: 1223px;
-    height: 600px;
+    max-width: 1223px;
+    height: 3046px;
     background-color: white;
-    position: relative;
-    left: 18%;
-    bottom: 41px;
     font-family: 'Cabin', sans-serif;
+    margin-left: 18%;
+    margin-right: 17.7%;
 
 }
 
@@ -182,9 +194,11 @@ main {
 .container-promoção-produtos {
 
     display: flex;
+    margin-bottom: 30px;
     
 
 }
+
 .produto-selected {
     width: 210px;
     height: 440px;
@@ -349,8 +363,9 @@ main {
 }
 
 .second-container {
-    height: 870px;
+    height: 2146px;
     background-color: whitesmoke;
+    overflow: hidden;
 
 }
 
@@ -396,6 +411,7 @@ main {
 
 .display-produtos-img {
     width: 60%;
+    
 }
 
 .display-produtos-img2 {
@@ -412,4 +428,195 @@ main {
 
 }
 
+.text-procurados {
+    margin-top: 71px;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    padding: 20px;
+    padding-left: 55px;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+
+.most-wanted {
+    margin-top: 38px;
+
+}
+
+.text-link2 {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    left: 85%;
+    top: 2%;
+    text-decoration: none;
+
+}
+
+.text-link2:hover {
+    text-decoration: underline;
+
+}
+
+/* FOOTER */
+
+footer {
+    font-family: 'Cabin', sans-serif;
+    background-color: rgb(10, 81, 173);
+    height: 460px;
+    width: 100%;
+
+}
+
+.form-of-payment {
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.formas-de-pagamento-ul {
+    display: flex;
+    padding-top: 40px;
+    position: relative;
+    left: 39.5%;
+    width: 400px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: white;
+    bottom: 20px;
+    
+}
+
+.forma-de-pagamento-li {
+    margin-left: 32px;
+    
+}
+
+.forma-de-pagamento-visa {
+    padding-left: 40px;
+    width: 35px;
+    height: 26px;
+
+}
+
+.news-letters {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    left: 11%;
+    top: 42px;
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+    line-height: 1.5rem;
+    
+}
+
+
+.form-news {
+    margin-left: 30.5%;
+}
+
+.input-news {
+    width: 300px;
+    height: 34px;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: 0;
+}
+
+.btn-form {
+    background-color: orange;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: 0;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    box-shadow: 0px 2px 21px -7px #000000;
+
+}
+
+.btn-form:active {
+    background-color: orangered;
+
+}
+
+.menu-footer {
+    display: flex;
+    position: relative;
+    left: 26.5%;
+    bottom: 50px;
+    width: 600px;
+    
+}
+
+.text-menu-footer2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    position: relative;
+    left: 65%;
+    top: 60px;
+    
+}
+
+.media-social-ul {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    left: 40%;
+    top: 70px;
+    
+}
+
+.media-li {
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 90%;
+    width: 33px;
+    height: 27px;
+    text-align: center;
+    padding-top: 6px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.media-li:hover {
+    box-shadow: 0px 2px 21px -1px #000000;
+    
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: 37.5%;
+    top: 40px;
+    width: 280px;
+    font-family: 'Cabin', sans-serif;
+
+}
 
