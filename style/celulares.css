@@ -1,0 +1,191 @@
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: whitesmoke;
+    margin-right: 0;
+    margin-left: 18%;
+    padding-bottom: 90px;
+    margin-bottom: 0;
+}
+
+.celular-data {
+    margin-top: 50px;
+}
+
+.produto-selected {
+    margin-right: 2.5%;
+    margin-left: 0;
+}
+
+.filtro {
+    background-color: white;
+    width: 250px;
+    height: 1379px;
+    position: absolute;
+    left: 68%;
+    top: 58.4%;
+    padding-left: 20px;
+    border-radius: 5px;
+    
+}
+
+.text-body-filter {
+    color: rgb(53, 52, 52);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-left: 4%;
+}
+
+.title-filter {
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.label-from {
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 5px;
+    
+    
+}
+
+.filter-ul {
+    border-bottom: solid;
+    border-color: rgb(53, 52, 52);
+    border-width: 2px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+    
+}
+
+.filter-li {
+    display: flex;
+    margin-top: 12px;
+    padding-bottom: 7px;
+    margin-left: 10px;
+}
+
+.banner-iphone12 {
+    position: absolute;
+    right: 5%;
+    bottom: 35px;
+    height: 19%;
+    width: 90%;
+    
+    
+}
+
+.banner-iphone12 {
+    box-shadow: 0px 2px 21px -13px #000000; 
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+    
+    
+    
+    .buscador {
+        width: 350px;
+    }
+
+    .icone-buscador {
+        right: 39px;
+    }
+
+    .Login {
+        left: 72%;
+    }
+
+    .menu-header {
+        margin-left: 230px;
+    }
+
+    .second-content {
+        max-height: 256px;
+    }
+
+    .main-banner {
+
+        left: 18%;
+        width: 75%;
+    }
+    
+    main {
+        height: 1800px;
+    }
+    .tech-promoção {
+        width: 856px;
+
+    }
+
+    .celular-data {
+        margin-top: 50px;
+        width: 580px;
+    }
+
+    .container-promoção-produtos {
+        margin-bottom: 80px;
+        width: 710px;
+        height: 460px;
+    }
+
+    .produto-selected {
+        width: 210px;
+        height: 500px;
+    }
+
+    .ul-stars {
+        left: 4%;
+
+    }
+    
+    svg {
+        width: 10px;
+        
+    }
+
+
+    .filtro {
+        width: 200px;
+        left: 75%;
+        top: 498px
+    }
+
+    .banner-iphone12 {
+        height: 210px;
+        width: 200px;
+    }
+    
+    
+    .news-letters {
+        font-size: 17px;
+        left: 2%;
+    }
+
+    .input-news {
+        width: 200px;
+    }
+
+    .last-text {
+        margin-left: 150px;
+    }
+
+    .menu-footer {
+        left: 19.5%;
+    }
+
+    .copyright {
+        left: 36.5%;
+    }
+}
+
+
+
+
