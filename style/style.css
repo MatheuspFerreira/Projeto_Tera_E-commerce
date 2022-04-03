@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Cabin', sans-serif;
     background-color: white;
@@ -33,7 +37,7 @@ header {
 .container-buscador {
     position: relative;
     left: 33%;
-    bottom: 24px;
+    bottom: 30px;
 
 }
 
@@ -54,6 +58,11 @@ header {
     top: 14px;
     right: 39.8px;
     border-radius: 10px;
+    
+}
+
+.icone-buscador:active {
+    background-color: orangered;
     
 }
 
@@ -148,8 +157,7 @@ nav {
 }
 
 .main-banner {
-    position: relative;
-    left: 18%;
+width: 100%;
     
     
 }
@@ -160,11 +168,12 @@ nav {
 
 main {
     max-width: 1223px;
-    height: 3046px;
+    height: auto;
     background-color: white;
     font-family: 'Cabin', sans-serif;
     margin-left: 18%;
     margin-right: 17.7%;
+    margin-bottom: 110px;
 
 }
 
@@ -174,8 +183,9 @@ main {
     padding: 20px;
     padding-left: 55px;
     font-size: 22px;
-    margin: 0;
+    margin: -4px 0 0 0;
     text-transform: uppercase;
+    width: 100%;
     
 }
 
@@ -186,9 +196,8 @@ main {
 
 .first-container {
     background-color: whitesmoke;
-    height: 741px;
     padding-top: 35px;
-    overflow: hidden;
+    
 }
 
 .container-promoção-produtos {
@@ -223,7 +232,7 @@ main {
     background-color: orange;
     color: white;
     width: 40px;
-    height: 31px;
+    height: auto;
     text-align: center;
     padding-top: 8px;
     font-size: 14px;
@@ -242,7 +251,7 @@ main {
     background-color: white;
     color: orange;
     width: 40px;
-    height: 31px;
+    height: auto;
     text-align: center;
     padding-top: 4.8px;
     font-size: 10px;
@@ -263,7 +272,7 @@ main {
 }
 
 .imagens-promo {
-    width: 120px;
+    width: 57.5%;
     position: relative;
     left: 21%;
     top: 22px;
@@ -356,23 +365,32 @@ main {
 
 }
 
-.banner-app {
-    position: relative;
-    top: 75px;
+.text-promo {
+    padding: 20px 0;
+}
 
+.banner-app {
+    width: 100%;
+
+}
+
+.banner-cartao {
+    position: relative;
+    top: 60px;
+    width: 100%;
+   
 }
 
 .second-container {
-    height: 2146px;
     background-color: whitesmoke;
-    overflow: hidden;
-
+    
 }
 
 .container-produtos {
-    height: 220px;
+    height: auto;
     padding-top: 70px;
     display: flex;
+    margin-left: 3.2%;
 
 }
 
@@ -393,6 +411,11 @@ main {
 .display-produtos:hover {
     box-shadow: 0px 2px 21px -7px #000000;
 
+}
+
+.hiper-link-produtos {
+    margin-left: 23px;
+    margin-right: 7px;
 }
 
 .product-list {
@@ -429,13 +452,14 @@ main {
 }
 
 .text-procurados {
-    margin-top: 71px;
+    margin-top: 55px;
     background-color: rgb(53, 52, 52);
     color: white;
     padding: 20px;
     padding-left: 55px;
     font-size: 22px;
     text-transform: uppercase;
+
 
 }
 
@@ -449,7 +473,7 @@ main {
     font-size: 22px;
     font-weight: bold;
     position: relative;
-    left: 85%;
+    left: 86%;
     top: 2%;
     text-decoration: none;
 
@@ -466,7 +490,7 @@ footer {
     font-family: 'Cabin', sans-serif;
     background-color: rgb(10, 81, 173);
     height: 460px;
-    width: 100%;
+    
 
 }
 
@@ -584,7 +608,7 @@ footer {
     display: flex;
     margin-top: 30px;
     position: relative;
-    left: 40%;
+    left: 38.5%;
     top: 70px;
     
 }
@@ -594,8 +618,7 @@ footer {
     border-color: white;
     border-width: 2px;
     border-radius: 90%;
-    width: 33px;
-    height: 27px;
+    width: 40px;
     text-align: center;
     padding-top: 6px;
     margin-right: 10px;
@@ -618,5 +641,88 @@ footer {
     width: 280px;
     font-family: 'Cabin', sans-serif;
 
+}
+
+/*
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+    
+    
+    
+    .buscador {
+        width: 350px;
+    }
+
+    .icone-buscador {
+        right: 39px;
+    }
+
+    .Login {
+        left: 72%;
+    }
+
+    .menu-header {
+        margin-left: 230px;
+    }
+
+    .second-content {
+        max-height: 256px;
+    }
+
+    .main-banner {
+
+        left: 18%;
+        width: 75%;
+    }
+
+    main {
+        margin-right: 7%;
+    }
+
+    .produto-selected {
+        width: 160px;
+    }
+
+    .ul-stars {
+        left: 4%;
+
+    }
+    
+    svg {
+        width: 10px;
+        
+    }
+
+    .text-link {
+        left: 60%;
+    }
+
+    .display-produtos {
+        width: 190px;
+        height: 200px;
+    }
+
+    
+    /*footer */
+    /*
+    .news-letters {
+        font-size: 17px;
+        left: 2%;
+    }
+
+    .input-news {
+        width: 200px;
+    }
+
+    .last-text {
+        margin-left: 150px;
+    }
+
+    .menu-footer {
+        left: 19.5%;
+    }
+
+    .copyright {
+        left: 36.5%;
+    }
 }
 
