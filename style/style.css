@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
@@ -224,6 +225,7 @@ main {
 
     display: flex;
     margin-bottom: 30px;
+    flex-wrap: wrap;
     
 
 }
@@ -235,6 +237,7 @@ main {
     margin-left: 2.5%;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 2.5%;
     
 }
 
@@ -666,7 +669,7 @@ footer {
     font-family: 'Cabin', sans-serif;
 
 }
-/* CHANGES ON BOOTSTRAP*/
+/* CHANGES IN BOOTSTRAP*/
 
 .navbar-nav {
     margin-left: 20%;
@@ -683,86 +686,355 @@ a:hover{
     color: orange;
 }
 
-/*
-@media screen and (min-width: 1200px) and (max-width: 1299px) {
+
+/* MOBILE VERSION*/
+
+@media screen and (max-width: 576px){
+ 
+
+   
+    /* HEADER */
+    .first-content {
+        height: 300px;
+        max-height: none;
+        
+    }
     
+    .logo-mz {
+       
+        left: 114px;
+        width: 170%;
+        top: auto;
+        bottom: 100px;
+        
+    }
     
-    
+    .container-buscador {
+        width: 40%;
+        margin: 0%;
+        position: relative;
+        right: 1.2%;
+        
+    }
     .buscador {
-        width: 350px;
-    }
-
-    .icone-buscador {
-        right: 39px;
-    }
-
-    .Login {
-        left: 72%;
-    }
-
-    .menu-header {
-        margin-left: 230px;
-    }
-
-    .second-content {
-        max-height: 256px;
-    }
-
-    .main-banner {
-
-        left: 18%;
-        width: 75%;
-    }
-
-    main {
-        margin-right: 7%;
-    }
-
-    .produto-selected {
-        width: 160px;
-    }
-
-    .ul-stars {
-        left: 4%;
-
-    }
-    
-    svg {
-        width: 10px;
+        width: auto;
         
     }
 
-    .text-link {
+    .icone-buscador {
+        width: 23%;
+        left: 168px;
+        bottom: 40px;
+        top: auto;
+
+    }
+
+    .Login {
+        left: auto;
+        top: 60px;
+        right: 24%;
+        font-size: 20px;
+    }
+
+    .banner-login {
+        width: 25px;
+        height: 25px;
+        top: 24px;
+        right: 40%;
+    }
+
+    .mydropdown {
+    left: auto;
+    right: 21%;
+    bottom: 8px;
+    }
+
+    .Car-Content {
+        position: relative;
+        right: 70%;
+        top: 35px;
+    }
+
+    .banner-carrinho {
+        width: 24px;
+        left: 30%;
+    }
+
+    .body-text2 {
+        color: white;
+        font-size: 20px;
+        position: relative;
         left: 60%;
+        bottom: 50px;
+        padding: 0;
     }
-
-    .display-produtos {
-        width: 190px;
-        height: 200px;
-    }
-
     
-    /*footer */
-    /*
-    .news-letters {
-        font-size: 17px;
+    .main-banner {
+        width: 100%;
+        margin: 0;
+        height: 110px;
+    }
+
+    /*MAIN */
+    main {
+        margin: 0;
+        max-width: none;
+        margin-top: -3px;
+
+    }
+
+    .tech-promoção {
+        padding: 20px 0;
+        text-align: center;
+        
+    }
+
+    .tech-produtos {
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .first-container {
+        background-color: whitesmoke;
+        padding-top: 35px;
+        height: auto;
+    }
+    .container-promoção-produtos {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .produto-selected {
+        width: 170px;
+        margin: 0 1% 20px 1%;
+        
+        height: 440px;
+        
+    }   
+
+    .text-link {
+        left: 7%;
+        top: 0%;
+        bottom: 10px;
+
+    }
+
+    .second-container {
+        margin-bottom: -4px;
+    }
+
+    .hiper-link-produtos {
+        margin: 10px 12.5%;
+    }
+    .container-produtos {
+        margin-left: 0%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .price-discount {
+        font-size: 22px;
+    }
+
+    .text-link {
+        font-size: 19px;
+    }
+    
+    .text-link2 {
+        left: 38%;;
+        bottom: 10px;
+        
+    }
+
+    .text-procurados {
+        padding-left: 0%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .discount-amount {
+        height: 39px;
+    }
+    
+    .qnt-produto {
+        width: 24%;
+        height: 39px;
+        font-size: 9.5px;
+    }
+
+    .ul-stars {
         left: 2%;
+        top: 9px;
+        width: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 650px;
+        overflow: hidden;
+    }
+
+    .form-news {
+        margin-left: 2%;
+        margin-top: 22%;
+    }
+
+
+    .news-letters {
+        width: auto;
+        left: 0;
+    }
+
+    .form-news {
+        text-align: center;
+    }
+
+    .input-news {
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .btn-form {
+        margin-left: 0%;
+    }
+
+    .formas-de-pagamento-ul {
+        width: auto;
+        left: 0%;
+    }
+
+    .menu-footer {
+        width: auto;
+        left: 0;
+        right: 300px;
+    }
+
+    .text-menu-footer2 {
+        left: 38%;
+    }
+
+    .media-social-ul {
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        
+    }
+
+    .copyright {
+        width: auto;
+        left: 8.5%;
+    }
+        
+}
+
+@media screen and (max-width: 330px) {
+    
+    .logo-mz {
+        left: 90px;
+    }
+    .container-buscador {
+        right: 10%;
+    }
+    .Login {
+        font-size: 17px;
+        right: 28%;
+    }
+    .body-text2{
+        font-size: 17px;
+        left: 66%;
+    }
+
+    .icone-buscador {
+        width: 27%;
+        bottom: 39px
+    }
+    .text-link {
+        font-size: 16px;
+    }
+    .text-link2{
+        left: 33%;
+
+    }
+    
+    .news-letters {
+        font-size: 14px;
+        
+    }
+
+    .form-news {
+        text-align: initial;
+    }
+    
+
+    .input-news {
+        width: 220px;
+        margin-left: 45px;
+    }
+
+    .btn-form {
+        margin-left: 25%;
+    }
+
+    .form-of-payment {
+        font-size: 15px;
+    }
+
+    .forma-de-pagamento-li {
+        margin-left: 28px;
+        right: 7%;
+    }
+
+    .media-social-ul {
+        right: 8%;
+        left: auto;
+    }
+   
+    .copyright {
+        font-size: 13px;
+        left: 8.5%;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+   
+    .logo-mz {
+        left: 80px;
+   
+    }
+
+    .icone-buscador {
+        width: 30%;
+        bottom: 39px;
+    }
+
+    .text-link {
+        left: 3%;
+        font-size: 17px;
+    }
+
+    .text-link2{
+        left:35.3%;
+        font-size: 17px;
+    }
+
+    .news-letters {
+        font-size: 14px;
+        
     }
 
     .input-news {
         width: 200px;
     }
 
-    .last-text {
-        margin-left: 150px;
+    .media-social-ul {
+        right: 14%;
     }
-
-    .menu-footer {
-        left: 19.5%;
-    }
-
+   
     .copyright {
-        left: 36.5%;
+        left: 7.5%;
     }
 }
-
