@@ -4,10 +4,190 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
+
+.logo-mz {
+    left: 33%;
+}
+
+
+.Login {
+    right: 8.3%;
+    left: auto;
+}
+
+.banner-login {
+    right: 95px;
+    top: 40px;
+}
+
+.mydropdown {
+    top: 8px;
+
+}
+.banner-carrinho{
+    left: 27%;
+}
+
+
+
+.icone-buscador {
+    top: auto;
+    bottom: 2px;
+}
+
+.second-content {
+    overflow: visible;
+}
+main {
+    height: 550px;
+}
+.main-banner {
+    display: none;
+}
+
+
+
+
 .form-signin {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
     margin-top: 150px;
+}
+
+li{
+    display: inline;
+}
+
+footer {
+    height: 550px;
+}
+
+
+.news-letters {
+    top: 53px;
+}
+.form-news {
+    margin-left: 7%;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.media-social-ul {
+    left: 33.5%;
+}
+
+
+/* MOBILE VERSION */
+@media screen and (max-width: 576px) {
+
+    
+    .logo-mz {
+        left: 114px;
+    }
+    
+    .buscador {
+        width: 210px;
+    }
+
+    .icone-buscador {
+        bottom: 40px;
+        left: 119px;
+    }
+
+    .Login{
+        left: auto;
+        right: 28%;
+    }
+
+    .mydropdown {
+        top: 5px;
+        right: 16%;
+    }
+
+    .banner-carrinho {
+        left: auto;
+        right: 3%;
+    }
+
+    .body-text2 {
+        bottom: 55px;
+
+    }
+    
+    
+    .text-center {
+        text-align: initial;
+    }
+    
+    footer {
+        height: 710px;
+        
+    }
+
+    .form-news {
+        margin-left: 0;
+    }
+    
+    .form-of-payment {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .forma-de-pagamento-visa {
+        padding-left: 0px;
+        position: initial;
+    }
+    .last-text {
+        margin: 0;
+    }
+
+    .formas-de-pagamento-ul {
+        padding-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .forma-de-pagamento-li {
+        position: initial;
+        margin: 0;
+        padding: 0 2.5%;
+
+    }
+
+    .forma-de-pagamento-visa {
+        width: auto;
+    }
+    
+    .menu-footer {
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .text-menu-footer2 {
+        padding: 30px 0 0 0;
+        margin: 0;
+        position:initial;
+
+
+    }
+    .media-social-ul {
+        padding: 0;
+        margin: 0;
+        position: initial;
+        width: auto;
+    }
+    
+    .copyright {
+        position: initial;
+        left: 0;
+        margin-top: 15%;
+    }
 }

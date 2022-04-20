@@ -5,10 +5,6 @@ body {
 
 main {
     background-color: whitesmoke;
-    margin-right: 0;
-    margin-left: 18%;
-    padding-bottom: 90px;
-    margin-bottom: 0;
 }
 
 .celular-data {
@@ -86,6 +82,109 @@ main {
 .banner-iphone12 {
     box-shadow: 0px 2px 21px -13px #000000; 
 }
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+   
+    .nav-item {
+        left: auto;
+        right: 22%;
+        bottom: 5px;
+        
+    }
+    .icone-buscador {
+        left: 150px;
+        bottom: 39px;
+        min-width: 35px;
+        width: 21%;
+    }
+
+    
+    .celular-data {
+        margin-top: 500px;
+    }
+
+    .filtro {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        padding-left: 0%;
+        height: auto;
+        margin: 0 2%;
+        top: 540px;
+        
+    }
+
+    .text-body-filter {
+        text-align: center;
+    }
+
+    .filter-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filter-ul {
+        border: none;
+        margin-right: 12px;
+        min-width: 80px;
+        text-align: center;
+    }
+
+    .title-filter {
+        text-align: center;
+        font-size: 12px;
+
+    }
+
+    .banner-iphone12 {
+        display: none;
+    }
+
+    .label-from {
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 1px;
+
+    }
+    .label-from svg {
+        width: 10px;
+        
+    }
+
+    .container-promoção-produtos {
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 368px){
+
+    
+    .filter-ul {
+        margin-right: 1px;
+    }
+    
+    .filter-li {
+        margin-left: 5px;
+        
+    }
+
+    .label-from {
+        font-size: 9px;
+    }
+
+}
+
+
+
+
+
 
 @media screen and (min-width: 1200px) and (max-width: 1299px) {
     
