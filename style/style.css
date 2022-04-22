@@ -87,11 +87,13 @@ header {
 
 .nav-link {
     color: white;
+    font-family: 'Cabin', sans-serif;
 }
 
 .nav-link:hover {
     color: black;
 }
+
 
 .banner-login {
     position: relative;
@@ -217,7 +219,7 @@ main {
 .first-container {
     background-color: whitesmoke;
     padding-top: 35px;
-    height: 620px;
+    
     
 }
 
@@ -226,6 +228,7 @@ main {
     display: flex;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     
 
 }
@@ -234,7 +237,7 @@ main {
     width: 210px;
     height: 443px;
     background-color: white;
-    margin-left: 2.5%;
+    margin: 0 1.25%;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 2.5%;
@@ -376,9 +379,7 @@ main {
     color: orange;
     font-size: 22px;
     font-weight: bold;
-    position: relative;
-    left: 69%;
-    top: 5%;
+    text-align: center;
     text-decoration: none;
 
 }
@@ -413,7 +414,10 @@ main {
     height: auto;
     padding-top: 70px;
     display: flex;
-    margin-left: 3.2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
@@ -421,7 +425,7 @@ main {
     background-color: white;
     width: 250px;
     height: 220px;
-    margin-left: 2.5%;
+    
     padding-right: 14px;
     border-radius: 5px;
     border: none;
@@ -437,8 +441,7 @@ main {
 }
 
 .hiper-link-produtos {
-    margin-left: 23px;
-    margin-right: 7px;
+    margin: 10px;
 }
 
 .product-list {
@@ -491,21 +494,6 @@ main {
 
 }
 
-.text-link2 {
-    color: orange;
-    font-size: 22px;
-    font-weight: bold;
-    position: relative;
-    left: 86%;
-    top: 2%;
-    text-decoration: none;
-
-}
-
-.text-link2:hover {
-    text-decoration: underline;
-
-}
 
 /* FOOTER */
 
@@ -686,6 +674,10 @@ a:hover{
     color: orange;
 }
 
+svg {
+    vertical-align: initial;
+}
+
 
 /* MOBILE VERSION*/
 
@@ -800,11 +792,7 @@ a:hover{
         padding-top: 35px;
         height: auto;
     }
-    .container-promoção-produtos {
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
+ 
     .produto-selected {
         width: 170px;
         margin: 0 1% 20px 1%;
@@ -824,9 +812,6 @@ a:hover{
         margin-bottom: -4px;
     }
 
-    .hiper-link-produtos {
-        margin: 10px 12.5%;
-    }
     .container-produtos {
         margin-left: 0%;
         flex-direction: column;
@@ -842,11 +827,6 @@ a:hover{
         font-size: 19px;
     }
     
-    .text-link2 {
-        left: 38%;;
-        bottom: 10px;
-        
-    }
 
     .text-procurados {
         padding-left: 0%;
@@ -954,10 +934,7 @@ a:hover{
     .text-link {
         font-size: 16px;
     }
-    .text-link2{
-        left: 33%;
-
-    }
+  
     
     .news-letters {
         font-size: 14px;
@@ -1016,10 +993,6 @@ a:hover{
         font-size: 17px;
     }
 
-    .text-link2{
-        left:35.3%;
-        font-size: 17px;
-    }
 
     .news-letters {
         font-size: 14px;
