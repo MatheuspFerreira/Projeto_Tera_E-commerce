@@ -15,39 +15,36 @@ body {
 /* HEADER */
 
 header {
-    overflow-x: hidden;
+    
     font-family: 'Cabin', sans-serif;
 
 }
 
 .first-content {
-    max-height: 130px;
+    min-height: 130px;
     background-color: rgb(0, 104, 240);
     display: flex;
     align-items: center;
 
 }
 
-
-
-.img-link-header {
+.link-header {
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-mz {
-    position: relative;
-    left: 60%;
-    width: 30%;
-    top: 5px;
-
+    width: 33%;
+    min-width: 135px;
+ 
 }
 
 .container-buscador {
-    
     width: 35%;
-    margin-left: 8%;
-    margin-top: 23px;
-    
+    display: flex;
+    justify-content: center;    
 
 }
 
@@ -60,14 +57,16 @@ header {
     border: none;
     outline: 0;
     
-    
 }
+
+.container-buscador a {
+    position: relative;
+    right: 30px;
+}
+
 
 .icone-buscador {
     width: 35.9px;
-    position: relative;
-    top: 12.5px;
-    right: 38.7px;
     border-radius: 10px;
     
 }
@@ -78,12 +77,21 @@ header {
 }
 
 .Login {
-    position: relative;
-    left: 4%;
-    top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 35%;
     
 }
+
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 
 .nav-link {
     color: white;
@@ -96,16 +104,19 @@ header {
 
 
 .banner-login {
-    position: relative;
     width: 29px;
     height: 29px;
-    right: 32px;
-    top: 30px;
     border-radius: 90%;
     border: solid;
     border-color: grey;
     padding: 1px;
 
+}
+
+.Car-Content {
+    display: flex;
+    align-items: center;
+    
 }
 
 .body-text {
@@ -117,19 +128,12 @@ header {
 
 .banner-carrinho {
     width: 24px;
-    position: relative;
-    left: 35%;
-    bottom: 28px;
 
 }
 
 .body-text2 {
     color: white;
     font-size: 15px;
-    position: relative;
-    left: 40%;
-    bottom: 55px;
- 
 }
 
 .hiper-link {
@@ -174,7 +178,6 @@ header {
 
 .second-content {
     max-height: 322px;
-    overflow: hidden;
 }
 
 .main-banner {
@@ -500,84 +503,63 @@ main {
 footer {
     font-family: 'Cabin', sans-serif;
     background-color: rgb(10, 81, 173);
-    height: 460px;
-    
 
 }
 
-.form-of-payment {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Cabin', sans-serif;
-}
-
-.formas-de-pagamento-ul {
+.first-content-footer {
+    width: 100%;
     display: flex;
-    padding-top: 40px;
-    position: relative;
-    left: 39.5%;
-    width: 400px;
-    border-bottom: solid;
-    border-width: 2px;
-    border-color: white;
-    bottom: 20px;
-    
-}
-
-.forma-de-pagamento-li {
-    margin-left: 50px;
-    position: relative;
-    right: 16%;
-    
-    
-    
-}
-
-.forma-de-pagamento-visa {
-    padding-left: 40px;
-    width: 35px;
-    height: 26px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
 
 }
+
+
 
 .news-letters {
     color: white;
     font-family: 'Cabin', sans-serif;
-    position: relative;
-    left: 11%;
-    top: 42px;
     font-size: 20px;
-    width: 350px;
-    text-align: center;
     line-height: 1.5rem;
+    margin-bottom: 1rem;
     
+}
+
+.news-letters h3 {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
 
 
 .form-news {
-    margin-left: 31%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
 }
 
 .input-news {
-    width: 300px;
+    min-width: 220px;
+    width: 25%;
     height: 34px;
-    margin-left: 40px;
+    margin-bottom: 25px;
     border-radius: 10px;
-    padding-left: 10px;
     border: none;
     outline: 0;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .btn-form {
     background-color: orange;
-    width: 150px;
+    width: 12%;
+    min-width: 130px;
     height: 40px;
-    margin-left: 20px;
     border-radius: 10px;
-    padding-left: 10px;
     border: none;
     outline: 0;
     color: white;
@@ -597,12 +579,57 @@ footer {
 
 }
 
+.second-content-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.form-of-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 50px;
+}
+
+.formas-de-pagamento-ul {
+    display: flex;
+    width: 400px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: white;
+    bottom: 20px;
+    padding: 0;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.forma-de-pagamento-li {
+    padding: 0 20px;
+    width: 20%;
+    
+    
+}
+
+.forma-de-pagamento-visa {
+    width: 35px;
+    height: 26px;
+
+}
+
 .menu-footer {
     display: flex;
-    position: relative;
-    left: 26.5%;
-    bottom: 50px;
-    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
     
 }
 
@@ -613,18 +640,12 @@ footer {
     text-align: center;
     font-family: 'Cabin', sans-serif;
     color: white;
-    position: relative;
-    left: 65%;
-    top: 60px;
     
 }
 
 .media-social-ul {
     display: flex;
-    margin-top: 30px;
-    position: relative;
-    left: 38.5%;
-    top: 70px;
+    padding: 0;
     
 }
 
@@ -633,11 +654,11 @@ footer {
     border-color: white;
     border-width: 2px;
     border-radius: 90%;
-    width: 40px;
+    width: 42px;
+    height: 43px;
     text-align: center;
-    padding-top: 6px;
-    margin-right: 10px;
-    margin-top: 20px;
+    padding-top: 9px;
+    margin: 20px 5px 0px 5px;
     background-color: white;
 
 }
@@ -650,11 +671,9 @@ footer {
 .copyright {
     color: white;
     font-size: 18px;
-    position: relative;
-    left: 37.5%;
-    top: 40px;
-    width: 280px;
     font-family: 'Cabin', sans-serif;
+    margin: 10px 0;
+    text-align: center;
 
 }
 /* CHANGES IN BOOTSTRAP*/
@@ -665,9 +684,20 @@ footer {
     color: white;
 }
 
-.nav-item2 {
+.navbar-nav {
+    margin-left: 1.5%;
+    justify-content: center;
+    width: 100%;
+    margin-right: 1.5%;
+    
+}
+
+.nav-item {
+
     min-width: 152px;
-    margin-left: 3.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
 }
 
 a:hover{
@@ -679,335 +709,3 @@ svg {
 }
 
 
-/* MOBILE VERSION*/
-
-@media screen and (max-width: 576px){
- 
-
-   
-    /* HEADER */
-    .first-content {
-        height: 300px;
-        max-height: none;
-        
-    }
-    
-    .logo-mz {
-       
-        left: 114px;
-        width: 170%;
-        top: auto;
-        bottom: 100px;
-        
-    }
-    
-    .container-buscador {
-        width: 40%;
-        margin: 0%;
-        position: relative;
-        right: 1.2%;
-        
-    }
-    .buscador {
-        width: auto;
-        
-    }
-
-    .icone-buscador {
-        width: 23%;
-        left: 168px;
-        bottom: 40px;
-        top: auto;
-
-    }
-
-    .Login {
-        left: auto;
-        top: 60px;
-        right: 24%;
-        font-size: 20px;
-    }
-
-    .banner-login {
-        width: 25px;
-        height: 25px;
-        top: 24px;
-        right: 40%;
-    }
-
-    .mydropdown {
-    left: auto;
-    right: 21%;
-    bottom: 8px;
-    }
-
-    .Car-Content {
-        position: relative;
-        right: 70%;
-        top: 35px;
-    }
-
-    .banner-carrinho {
-        width: 24px;
-        left: 30%;
-    }
-
-    .body-text2 {
-        color: white;
-        font-size: 20px;
-        position: relative;
-        left: 60%;
-        bottom: 50px;
-        padding: 0;
-    }
-    
-    .main-banner {
-        width: 100%;
-        margin: 0;
-        height: 110px;
-    }
-
-    /*MAIN */
-    main {
-        margin: 0;
-        max-width: none;
-        margin-top: -3px;
-
-    }
-
-    .tech-promoção {
-        padding: 20px 0;
-        text-align: center;
-        
-    }
-
-    .tech-produtos {
-        padding: 20px 0;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .first-container {
-        background-color: whitesmoke;
-        padding-top: 35px;
-        height: auto;
-    }
- 
-    .produto-selected {
-        width: 170px;
-        margin: 0 1% 20px 1%;
-        
-        height: 440px;
-        
-    }   
-
-    .text-link {
-        left: 7%;
-        top: 0%;
-        bottom: 10px;
-
-    }
-
-    .second-container {
-        margin-bottom: -4px;
-    }
-
-    .container-produtos {
-        margin-left: 0%;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .price-discount {
-        font-size: 22px;
-    }
-
-    .text-link {
-        font-size: 19px;
-    }
-    
-
-    .text-procurados {
-        padding-left: 0%;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .discount-amount {
-        height: 39px;
-    }
-    
-    .qnt-produto {
-        width: 24%;
-        height: 39px;
-        font-size: 9.5px;
-    }
-
-    .ul-stars {
-        left: 2%;
-        top: 9px;
-        width: auto;
-    }
-
-    /* FOOTER */
-
-    footer {
-        height: 650px;
-        overflow: hidden;
-    }
-
-    .form-news {
-        margin-left: 2%;
-        margin-top: 22%;
-    }
-
-
-    .news-letters {
-        width: auto;
-        left: 0;
-    }
-
-    .form-news {
-        text-align: center;
-    }
-
-    .input-news {
-        margin-bottom: 20px;
-        margin-left: 0px;
-    }
-
-    .btn-form {
-        margin-left: 0%;
-    }
-
-    .formas-de-pagamento-ul {
-        width: auto;
-        left: 0%;
-    }
-
-    .menu-footer {
-        width: auto;
-        left: 0;
-        right: 300px;
-    }
-
-    .text-menu-footer2 {
-        left: 38%;
-    }
-
-    .media-social-ul {
-        left: 0%;
-        right: 0%;
-        width: 100%;
-        
-    }
-
-    .copyright {
-        width: auto;
-        left: 8.5%;
-    }
-        
-}
-
-@media screen and (max-width: 330px) {
-    
-    .logo-mz {
-        left: 90px;
-    }
-    .container-buscador {
-        right: 10%;
-    }
-    .Login {
-        font-size: 17px;
-        right: 28%;
-    }
-    .body-text2{
-        font-size: 17px;
-        left: 66%;
-    }
-
-    .icone-buscador {
-        width: 27%;
-        bottom: 39px
-    }
-    .text-link {
-        font-size: 16px;
-    }
-  
-    
-    .news-letters {
-        font-size: 14px;
-        
-    }
-
-    .form-news {
-        text-align: initial;
-    }
-    
-
-    .input-news {
-        width: 220px;
-        margin-left: 45px;
-    }
-
-    .btn-form {
-        margin-left: 25%;
-    }
-
-    .form-of-payment {
-        font-size: 15px;
-    }
-
-    .forma-de-pagamento-li {
-        margin-left: 28px;
-        right: 7%;
-    }
-
-    .media-social-ul {
-        right: 8%;
-        left: auto;
-    }
-   
-    .copyright {
-        font-size: 13px;
-        left: 8.5%;
-    }
-    
-}
-
-@media screen and (max-width: 280px) {
-   
-    .logo-mz {
-        left: 80px;
-   
-    }
-
-    .icone-buscador {
-        width: 30%;
-        bottom: 39px;
-    }
-
-    .text-link {
-        left: 3%;
-        font-size: 17px;
-    }
-
-
-    .news-letters {
-        font-size: 14px;
-        
-    }
-
-    .input-news {
-        width: 200px;
-    }
-
-    .media-social-ul {
-        right: 14%;
-    }
-   
-    .copyright {
-        left: 7.5%;
-    }
-}
